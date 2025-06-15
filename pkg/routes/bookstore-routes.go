@@ -4,7 +4,8 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/sanskardubey/Documents/Projects/gocode/src/go-bookstore/pkg/controllers"
 )
-
+ 
+//RegisterBookStoreRoutes is a function that registers the routes for the bookstore
 var RegisterBookStoreRoutes = func(router *mux.Router) {
 	router.Handlefunc("/book/", controllers.CreateBook).Methods("POST")
 	router.Handlefunc("/book", controllers.GetBook).Methods("GET")
